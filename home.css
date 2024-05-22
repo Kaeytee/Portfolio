@@ -1,6 +1,6 @@
 body{
-    background-color: grey;
-    color: white;
+    background-color: #171717;
+    color:#ffffff;
 }
 .topnav{
     display:grid;
@@ -22,10 +22,12 @@ body{
 }
 .links{
     text-align: right;
+
 }
 .links a{
     padding-right: 10%;
-
+    color: #ffffff;
+    text-decoration: none;
 
 }
 .info{
@@ -48,12 +50,8 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-.skills{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 70%;
-    background-color: red;
-    margin: 0;
+.secA1 h4{
+    color: #828282;
 }
 .image{
     border-radius: 50%;
@@ -68,14 +66,45 @@ body{
 }
 .secD{
     text-align: center;
-    margin: 0;
-    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    column-gap: 7%;
 }
 .secD2 h2{
     font-size: xxx-large;
-    color: greenyellow;
+    color: #474747;
     margin: 0;
 }
 .secD2 h4{
     margin-top: 0;
+    color: #27ae60;
+}
+.fill{
+    text-align: center;
+}
+.fill h2{
+    font-size: xx-large;
+}
+.data{
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid grey;
+    color: white;
+    margin-bottom: 3px;
+}
+.data::placeholder{
+    color: #4f4f4f;
+}
+textarea{
+    width: 50%;
+    height: 60px;
+    margin-top: 10px;
 }
