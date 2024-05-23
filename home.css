@@ -1,3 +1,7 @@
+.main{
+    width: 70%;
+    margin: 0 auto;
+}
 body{
     background-color: #171717;
     color:#ffffff;
@@ -15,6 +19,8 @@ body{
     justify-content: left;
     width: 100%;
     display: inline-block;
+    min-width: 100px;
+    max-width: 759.719px;
 }
 .name h3{
     font-family:'Times New Roman', Times, serif;
@@ -28,11 +34,14 @@ body{
     padding-right: 10%;
     color: #ffffff;
     text-decoration: none;
-
+    max-width: 245.703px;
+    min-width: 100px;
 }
 .info{
     display: grid;
     grid-template-rows:repeat(6,1fr);
+    position: relative;
+    height: 100%;
 }
 .sec1{
     display: grid;
@@ -49,6 +58,13 @@ body{
 .secC2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.secA1 h1{
+    font-size: 300%;
+    margin-bottom: 0;
+    padding-top: 5%;
 }
 .secA1 h4{
     color: #828282;
@@ -56,14 +72,34 @@ body{
 .image{
     border-radius: 50%;
     border-width: 40px;
+    width: 70%;
+    object-position: right;
 }
 .About{
     text-align: center;
+    margin-bottom: 0;
+}
+.About h1{
+    font-size: large;
+}
+.About h2{
+    font-size: xxx-large;
+}
+.secB{
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto;
+}
+.secB a{
+    color: white;
+    text-decoration: none;
 }
 .secC h3{
     text-align: center;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
+
 .secD{
     text-align: center;
     display: grid;
@@ -76,20 +112,26 @@ body{
     justify-content: center;
     column-gap: 7%;
 }
+.secD h3{
+    font-size: xxx-large;
+}
 .secD2 h2{
     font-size: xxx-large;
     color: #474747;
     margin: 0;
+    font-family: arial;
+
 }
 .secD2 h4{
     margin-top: 0;
     color: #27ae60;
+    font-family: arial;
 }
 .fill{
     text-align: center;
 }
-.fill h2{
-    font-size: xx-large;
+.fill h3{
+    font-size: xxx-large;
 }
 .data{
     background-color: transparent;
@@ -99,6 +141,7 @@ body{
     border-bottom: 1px solid grey;
     color: white;
     margin-bottom: 3px;
+    padding-right: 100px;
 }
 .data::placeholder{
     color: #4f4f4f;
@@ -107,4 +150,35 @@ textarea{
     width: 50%;
     height: 60px;
     margin-top: 10px;
+    background-color: transparent;
+}
+.download{
+    background-color: #27ae60;
+    color: white;
+    padding: 15px;
+    width: 35%;
+    border: 1px;
+}
+.learn{
+    background-color:transparent;
+    color: white;
+    padding: 15px;
+    width: 35%;
+    box-sizing:border-box;
+    border-color:#ffffff;
+    border-width: 1px;
+
+}
+.submit{
+    background-color: #27ae60;
+    color: white;
+    width: 13%;
+    padding: 10px;
+    border: 1px;
+    margin-top: 16px;
+}
+.copy{
+    color:#474747;
+    margin-top: 10%;
+    text-align: center;
 }
