@@ -8,34 +8,36 @@ body{
 }
 .topnav{
     display:grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-    row-gap: 2px;
+    grid-template-columns: 65% 1fr;
+    /* width: 100%; */
+    /* row-gap: 2px; */
     padding-bottom: 100px;
     
 }
 .name{
-    margin: 0;
-    justify-content: left;
-    width: 100%;
-    display: inline-block;
-    min-width: 100px;
-    max-width: 759.719px;
+    /* margin: 0; */
+    justify-content: space-between;
+    /* width: 95%; */
+    /* display: inline-block; */
+    /* min-width: 50%;
+    max-width: 90%; */
 }
 .name h3{
     font-family:'Times New Roman', Times, serif;
     font-size: larger;
 }
 .links{
-    text-align: right;
+    text-align: left;
+    margin-block-start: 19.2px;
+    margin-block-end: 19.2px;
 
 }
 .links a{
     padding-right: 10%;
     color: #ffffff;
     text-decoration: none;
-    max-width: 245.703px;
-    min-width: 100px;
+    /* max-width: 245.703px;
+    min-width: 100px; */
 }
 .info{
     display: grid;
@@ -43,23 +45,45 @@ body{
     position: relative;
     height: 100%;
 }
-.sec1{
+.hero-content{
     display: grid;
     grid-template-columns:repeat(2,1fr) ;
+    display: relative;
 }
 .sec3{
     display: grid;
     grid-template-columns: repeat(4,1fr);
 }
-.sec4{
+.services{
     display: grid;
     grid-template-rows: repeat(2,1fr);
+    /* justify-content: space-between; */
 }
 .secC2{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    justify-items: center;
-    align-items: center;
+    /* justify-items: left;
+    align-items: left; */
+    grid-gap: 10px;
+    /* border: 1px solid #ccc; */
+    /* padding: 20px; */
+    text-align: left;
+    /* margin: 0 auto; */
+}
+
+.secc3 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+.secA1{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
 }
 .secA1 h1{
     font-size: 300%;
@@ -74,10 +98,15 @@ body{
     border-width: 40px;
     width: 70%;
     object-position: right;
+    /* position: relative; */
+    /* top: 50%; */
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
 }
 .About{
     text-align: center;
     margin-bottom: 0;
+    width: 90%;
 }
 .About h1{
     font-size: large;
@@ -90,6 +119,8 @@ body{
     color: #ffffff;
     align-items: center;
     margin: 0 auto;
+    /* height: 50%; */
+    vertical-align: bottom;
 }
 .secB a{
     color: white;
@@ -100,29 +131,22 @@ body{
     font-size: xxx-large;
 }
 
-.secD{
-    text-align: center;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
 .skills{
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     column-gap: 7%;
+    background-color: #212121;
 }
-.secD h3{
-    font-size: xxx-large;
-}
-.secD2 h2{
+.skill-item h2{
     font-size: xxx-large;
     color: #474747;
     margin: 0;
     font-family: arial;
 
 }
-.secD2 h4{
+.skill-item h4{
     margin-top: 0;
     color: #27ae60;
     font-family: arial;

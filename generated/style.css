@@ -1,0 +1,289 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #171717;
+    overflow: none;
+}
+
+.container {
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container {
+    display:grid;
+    grid-template-columns: 65% 1fr;
+}
+
+header {
+    /* display: grid;
+    grid-template-columns: 65% 1fr; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    margin-right: 0;
+    justify-content: flex-end;
+    /* margin: 0;
+    padding: 0; */
+    
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .links {
+   text-align: right;
+
+} */
+.hero {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-top: 100px;
+}
+
+.hero-content {
+    /* margin-right: 20px; Add some space between content and image */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-content h2 {
+    font-size: 58px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+/* 
+.hero-content button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+} */
+
+.hero-content  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.hero .text{
+    /* margin: 0 auto; */
+    text-align: left;
+    margin-top: 10%;
+
+}
+
+.hero-content .text .download {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.hero-content .text button:last-child {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.hero-image {
+    /* max-width: 50; */
+    text-align: center; 
+    float: right;
+    grid-column: 2;
+    text-align: right;
+;
+    /* align-self: center;
+    text-align: center; */
+}
+
+.hero-image img {
+    border-radius: 50%;
+    min-width: 40%;
+    max-width: 60%;
+    height:auto;
+    object-fit: cover;
+    border-width: 20px;
+    border-color: #202020;
+    box-sizing: border-box;
+    border-style: double
+}
+
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.about .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+
+.about .info div {
+    max-width: 200px;
+}
+
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.service-item h3{
+    text-align: left;
+}
+.services .service-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.services .service-item {
+    background-color: #333;
+    padding: 20px;
+    width: 20%;
+    padding-right: 40px;
+}
+.services h3{
+    text-align: right;
+}
+/* .services .service-item h3{
+    padding-right: 40px;
+} */
+
+.container h3 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    column-gap: 7%;
+    background-color: #212121;
+}
+
+.skill-item h2 {
+    font-size: xxx-large;
+    color: #474747;
+    margin: 0;
+    font-family: Arial;
+}
+
+.skill-item h4 {
+    margin-top: 0;
+    color: #27ae60;
+    font-family: Arial;
+}
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact .form-group input {
+    width: 40%;
+    padding: 10px;
+}
+
+.contact textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copy {
+    color: #474747;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.data {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid grey;
+    color: white;
+    margin-bottom: 3px;
+    padding-right: 100px;
+}
+
+.data::placeholder {
+    color: #4f4f4f;
+}
+
+textarea {
+    width: 50%;
+    height: 60px;
+    margin-top: 10px;
+    background-color: transparent;
+}
