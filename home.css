@@ -262,9 +262,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .container {
-        /* overflow-x: hidden; */
-    }
+    /* .container {
+        overflow-x: hidden;
+    } */
 
     .container1 {
         display: flex;
